@@ -25,6 +25,9 @@ import wedoPeripheralImage from './peripheral-connection/wedo/wedo-illustration.
 import wedoMenuImage from './peripheral-connection/wedo/wedo-small.svg';
 import wedoButtonImage from './peripheral-connection/wedo/wedo-button-illustration.svg';
 
+import ml2scratchImage from './ml2scratch.png';
+import ml2scratchInsetImage from './ml2scratch-small.png';
+
 export default [
     {
         name: (
@@ -233,5 +236,24 @@ export default [
         ),
         helpLink: 'https://scratch.mit.edu/wedo'
 
+    },
+    {
+      name: 'ML2Scratch',
+      extensionId: 'ml2scratch',
+      collaborator: 'Tsukurusha',
+      iconURL: ml2scratchImage,
+      insetIconURL: ml2scratchInsetImage,
+      description: (
+        <FormattedMessage
+          defaultMessage="ML2Scratch Blocks."
+          description="ML2Scratch Blocks"
+          id="gui.extension.ml2scratchblocks.description"
+        />
+      ),
+      featured: true,
+      disabled: false,
+      internetConnectionRequired: true,
+      bluetoothRequired: false,
+      helpLink: 'https://champierre.github.io/ml2scratch/'
     }
 ];
